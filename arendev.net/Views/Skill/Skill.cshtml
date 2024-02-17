@@ -1,0 +1,34 @@
+﻿@using arendev.net.Models.Entity;
+@model List<Skill>
+@{
+    ViewBag.Title = "Skill";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- START HEADING -->
+<section class="bg-title bg-light" id="home">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center">
+                    <h2 class="text-uppercase ls-4">Skill </h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Start Skilss-->
+@foreach (var item in Model)
+{
+    <div class="row justify-content-center">
+        <div class="services-box rounded mt-4 border w-50">
+            <h5 class="text-uppercase f-18 mt-4 pt-2">@item.Skill1</h5>
+            <h3 class="text-muted f-14 mt-2 pt-1">@item.SkillLevel</h3>
+            <p class="text-muted mt-4 mb-0"> @item.Information </p>
+        </div>
+    </div>
+
+}

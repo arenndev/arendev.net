@@ -17,9 +17,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /.content-header -->
-   <table class="table table-bordered">
+
+        <table class="table table-bordered">
        <tr>
            <td>ID</td>
            <td>Employer</td>
@@ -43,12 +42,17 @@
                <td>@item.StartDate</td>
                <td>@item.EndDate</td>
                <td>@item.Description</td>
-               <td><a href="#" class="btn btn-danger">Delete</a></td>
+               <td><a href="/AExperience/RemoveExperience/@item.Id" class="btn btn-danger">Delete</a></td>
                <td><a href="#" class="btn btn-warning">Update</a></td>
                
            </tr>
        }
    </table>
 
-    <a href="#" class="btn btn-primary">Add Experience</a>
+    <a href="/AExperience/ExperienceAdd" class="btn btn-primary">Add Experience</a>
+
+
+    </div>
+    <!-- /.content-header -->
+   
 </div>

@@ -32,5 +32,12 @@ namespace arendev.net.Controllers.Admin
             repo.TAdd(p);
             return RedirectToAction("AdminExperience");
         }
+
+        public ActionResult RemoveExperience(int id)
+        {
+            Experience t = repo.Find(x => x.Id == id);
+            repo.TDelete(t);
+            return RedirectToAction("AdminExperience");
+        }
     }
 }

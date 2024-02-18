@@ -3,6 +3,39 @@
     ViewBag.Title = "ExperienceAdd";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+< <!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Experience Add</h1>
+                </div>
+            </div>
+        </div>
 
-<h2>ExperienceAdd</h2>
+        <form method="post">
 
+            <input type="text" name="employer" class="form-control" placeholder="Employer" />
+            <br />
+            <input type="text" name="jobtitle" class="form-control" placeholder="JobTitle" />
+            <br />
+            <input type="text" name="city" class="form-control" placeholder="City" />
+            <br />
+            <input type="text" name="country" class="form-control" placeholder="Country" />
+            <br />
+            <input type="text" name="startdate" class="form-control" placeholder="StartDate" />
+            <br />
+            <input type="text" name="enddate" class="form-control" placeholder="EndDate" />
+            <br />
+            <input type="text" name="description" class="form-control" placeholder="Description" />
+            <br />
+            <button class="btn btn-info" name="save">Save</button>
+        </form>
+
+    </div>
+    <!-- /.content-header -->
+
+
+    

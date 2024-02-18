@@ -129,10 +129,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\CertificateController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\EducationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ExperienceController.cs" />
     <Compile Include="Controllers\PortfolioController.cs" />
+    <Compile Include="Controllers\ReferenceController.cs" />
     <Compile Include="Controllers\SkillController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -183,7 +186,14 @@
       <DependentUpon>EfDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CertificateRepository.cs" />
+    <Compile Include="Repositories\ContactRepository.cs" />
+    <Compile Include="Repositories\EducationRepository.cs" />
+    <Compile Include="Repositories\ExperienceRepository.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="Repositories\PortfolioRepository.cs" />
+    <Compile Include="Repositories\ReferenceRepository.cs" />
+    <Compile Include="Repositories\SkillRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\dist\css\adminlte.css" />
@@ -2675,9 +2685,13 @@
     <Content Include="Views\Skill\Skill.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Experience\AdminExperience.cshtml" />
+    <Content Include="Views\Certificate\Certificate.cshtml" />
+    <Content Include="Views\Education\Education.cshtml" />
+    <Content Include="Views\Reference\Reference.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Project\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

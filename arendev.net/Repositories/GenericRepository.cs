@@ -10,7 +10,7 @@ namespace arendev.net.Repositories
     {
         PortfolioEntities2 db = new PortfolioEntities2();
 
-        public List<T> list()
+        public List<T> List()
         {
             return db.Set<T>().ToList();
         }

@@ -1,0 +1,54 @@
+﻿@using arendev.net.Models.Entity;
+@model List<Experience>
+@{
+    ViewBag.Title = "AdminExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+< <!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Experience</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.content-header -->
+   <table class="table table-bordered">
+       <tr>
+           <td>ID</td>
+           <td>Employer</td>
+           <td>JobTitle</td>
+           <td>City</td>
+           <td>Country</td>
+           <td>StartDate</td>
+           <td>EndDate</td>
+           <td>Description</td>
+           <td>Delete</td>
+           <td>Update</td>
+       </tr>
+       @foreach (var item in Model)
+       {
+           <tr>
+               <td>@item.Id</td>
+               <td>@item.Employer</td>
+               <td>@item.JobTitle</td>
+               <td>@item.City</td>
+               <td>@item.Country</td>
+               <td>@item.StartDate</td>
+               <td>@item.EndDate</td>
+               <td>@item.Description</td>
+               <td><a href="#" class="btn btn-danger">Delete</a></td>
+               <td><a href="#" class="btn btn-warning">Update</a></td>
+               
+           </tr>
+       }
+   </table>
+
+    <a href="#" class="btn btn-primary">Add Experience</a>
+</div>

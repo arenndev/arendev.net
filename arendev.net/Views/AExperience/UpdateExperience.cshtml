@@ -1,0 +1,50 @@
+﻿@model arendev.net.Models.Entity.Experience
+@{
+    ViewBag.Title = "UpdateExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Experience Update</h1>
+                </div>
+            </div>
+        </div>
+
+        <form method="post">
+            
+            @Html.Label("Employer")
+            @Html.TextBoxFor(x => x.Employer, new { @class = "form-control" })
+            <br />
+            @Html.Label("JobTitle")
+            @Html.TextBoxFor(x => x.JobTitle, new { @class = "form-control" })
+            <br />
+            @Html.Label("City")
+            @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+            <br />
+            @Html.Label("Country")
+            @Html.TextBoxFor(x => x.Country, new { @class = "form-control" })
+            <br />
+            @Html.Label("StartDate")
+            @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control" })
+            <br />
+            @Html.Label("EndDate")
+            @Html.TextBoxFor(x => x.EndDate, new { @class = "form-control" })
+            <br />
+            @Html.Label("Description")
+            @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+            <br />
+            <button class="btn btn-info" name="save">Update Changes</button>
+        </form>
+
+    </div>
+    <!-- /.content-header -->
+
+
+
+</div>

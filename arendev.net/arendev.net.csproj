@@ -2690,6 +2690,7 @@
     <Content Include="Views\Reference\Reference.cshtml" />
     <Content Include="Views\AExperience\AdminExperience.cshtml" />
     <Content Include="Views\AExperience\ExperienceAdd.cshtml" />
+    <Content Include="Views\AExperience\UpdateExperience.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

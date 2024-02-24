@@ -74,8 +74,8 @@
           <Property Name="Description1" Type="text" />
           <Property Name="Description2" Type="text" />
           <Property Name="Description3" Type="text" />
-          <Property Name="CreateDate" Type="datetime" Nullable="false" />
-          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="CreateDate" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="UpdateDate" Type="datetime2" Precision="7" />
           <Property Name="Status" Type="smallint" Nullable="false" />
         </EntityType>
         <EntityType Name="Language">
@@ -131,6 +131,7 @@
           <Property Name="CreateDate" Type="datetime" Nullable="false" />
           <Property Name="UpdateDate" Type="datetime" />
           <Property Name="Status" Type="smallint" Nullable="false" />
+          <Property Name="SkillLevelNumbered" Type="tinyint" />
         </EntityType>
         <EntityType Name="SystemUser">
           <Key>
@@ -217,8 +218,8 @@
           <Property Name="StartDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="EndDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="7" />
           <Property Name="Status" Type="Int16" Nullable="false" />
           <Property Name="Description1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Description2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
@@ -277,6 +278,7 @@
           <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="UpdateDate" Type="DateTime" Precision="3" />
           <Property Name="Status" Type="Int16" Nullable="false" />
+          <Property Name="SkillLevelNumbered" Type="Byte" />
         </EntityType>
         <EntityType Name="SystemUser">
           <Key>
@@ -435,6 +437,7 @@
           <EntitySetMapping Name="Skills">
             <EntityTypeMapping TypeName="PortfolioModel.Skill">
               <MappingFragment StoreEntitySet="Skill">
+                <ScalarProperty Name="SkillLevelNumbered" ColumnName="SkillLevelNumbered" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Skill1" ColumnName="Skill" />
                 <ScalarProperty Name="Information" ColumnName="Information" />

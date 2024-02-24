@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\Admin\AExperienceController.cs" />
+    <Compile Include="Controllers\Admin\ASkillController.cs" />
     <Compile Include="Controllers\CertificateController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\EducationController.cs" />
@@ -2691,6 +2692,8 @@
     <Content Include="Views\AExperience\AdminExperience.cshtml" />
     <Content Include="Views\AExperience\ExperienceAdd.cshtml" />
     <Content Include="Views\AExperience\UpdateExperience.cshtml" />
+    <Content Include="Views\ASkill\AdminSkill.cshtml" />
+    <Content Include="Views\ASkill\AddSkill.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

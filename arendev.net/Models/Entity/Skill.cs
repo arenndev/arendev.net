@@ -21,5 +21,6 @@ namespace arendev.net.Models.Entity
         public System.DateTime CreateDate { get; set; }
         public Nullable<System.DateTime> UpdateDate { get; set; }
         public short Status { get; set; }
+        public Nullable<byte> SkillLevelNumbered { get; set; }
     }
 }

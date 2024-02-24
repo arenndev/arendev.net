@@ -1,0 +1,128 @@
+﻿@using arendev.net.Models.Entity
+@model List<Skill>
+@{
+    ViewBag.Title = "AdminSkill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@{string color = "";}
+
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Experience</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Skill List</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 10px">Id</th>
+                                                <th>Skill</th>
+                                                <th>Skill Level</th>
+                                                <th>Skill Level Progress Bar</th>
+                                                <th>Description</th>
+                                                <th>Delete</th>
+                                                <th>Update</th>
+
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+
+                                            @foreach (var item in Model)
+                                            {
+                                                if (item.SkillLevelNumbered >= 0 && item.SkillLevelNumbered <= 50)
+                                                {
+                                                    color = "progress-bar bg-danger";
+                                                }
+                                                if (item.SkillLevelNumbered >= 51 && item.SkillLevelNumbered <= 70)
+                                                {
+                                                    color = "progress-bar bg-warning";
+                                                }
+                                                if (item.SkillLevelNumbered >= 71 && item.SkillLevelNumbered <= 84)
+                                                {
+                                                    color = "progress-bar bg-primary";
+                                                }
+                                                if (item.SkillLevelNumbered >= 85 && item.SkillLevelNumbered <= 100)
+                                                {
+                                                    color = "progress-bar bg-success";
+                                                }
+                                                <tr>
+                                                    <td>@item.Id</td>
+                                                    <td>@item.Skill1</td>
+                                                    <td>@item.SkillLevel</td>
+                                                    
+
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="@color" style="width: @item.SkillLevelNumbered%"></div>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>@item.Information</td>
+
+                                                    <td>
+                                                        <a href="#" class="btn btn-warning btn-sm">
+                                                            <i class="fas fa-pencil-alt"></i> Update
+                                                        </a>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="/ASkill/RemoveSkill/@item.Id" class="btn btn-danger btn-sm">
+                                                            <i class="fas fa-trash"></i> Delete
+                                                        </a>
+                                                    </td>
+
+                                                </tr>
+
+                                            }
+
+                                        </tbody>
+                                    </table>
+
+                                    <br />
+                                    <a href="/ASkill/AddSkill" class="btn btn-info">Add Skill</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
+        </div>
+        <!-- ./wrapper -->
+        <!-- jQuery -->
+        <script src="../../plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../../dist/js/adminlte.min.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="../../dist/js/demo.js"></script>
+    </div>
+</div>

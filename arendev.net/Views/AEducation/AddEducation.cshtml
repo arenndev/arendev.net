@@ -1,0 +1,56 @@
+﻿@model arendev.net.Models.Entity.Education
+@{
+    ViewBag.Title = "AddEducation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Add Education</h1>
+                </div>
+            </div>
+        </div>
+
+        <form method="post">
+
+            @Html.Label("Id")
+            @Html.TextBoxFor(x => x.Id, new { @class = "form-control" })
+            <br />
+            @Html.Label("Degree")
+            @Html.TextBoxFor(x => x.Degree, new { @class = "form-control" })
+            <br />
+            @Html.Label("School")
+            @Html.TextBoxFor(x => x.School, new { @class = "form-control" })
+            <br />
+            @Html.Label("City")
+            @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+            <br />
+            @Html.Label("Information")
+            @Html.TextBoxFor(x => x.Country, new { @class = "form-control" })
+            <br />
+            @Html.Label("StartDate")
+            @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control" })
+            <br />
+            @Html.Label("EndDate")
+            @Html.TextBoxFor(x => x.EndDate, new { @class = "form-control" })
+            <br />
+            @Html.Label("Description")
+            @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+            <br />
+            @Html.Label("Status")
+            @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+            <br />
+
+            <button class="btn btn-info" name="save">Add Education</button>
+        </form>
+
+    </div>
+    <!-- /.content-header -->
+
+
+</div>
+

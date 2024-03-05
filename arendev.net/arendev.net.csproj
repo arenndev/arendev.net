@@ -129,6 +129,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\Admin\AEducationController.cs" />
     <Compile Include="Controllers\Admin\AExperienceController.cs" />
     <Compile Include="Controllers\Admin\ASkillController.cs" />
     <Compile Include="Controllers\CertificateController.cs" />
@@ -2695,6 +2696,9 @@
     <Content Include="Views\ASkill\AdminSkill.cshtml" />
     <Content Include="Views\ASkill\AddSkill.cshtml" />
     <Content Include="Views\ASkill\UpdateSkill.cshtml" />
+    <Content Include="Views\AEducation\AdminEducation.cshtml" />
+    <Content Include="Views\AEducation\AddEducation.cshtml" />
+    <Content Include="Views\AEducation\UpdateEducation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -33,6 +33,13 @@ namespace arendev.net.Controllers.Admin
             repo.TAdd(p);
             return RedirectToAction("AdminSkill");
         }
+
+        public ActionResult RemoveSkill(int id)
+        {
+            Skill t = repo.Find(x => x.Id == id);
+            repo.TDelete(t);
+            return RedirectToAction("AdminSkill");
+        }
     }    
        
 }

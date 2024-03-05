@@ -33,6 +33,6 @@ namespace arendev.net.Controllers.Admin
             repo.TAdd(p);
             return RedirectToAction("AdminSkill");
         }
-
+    }    
        
 }

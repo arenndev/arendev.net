@@ -128,8 +128,8 @@
           <Property Name="Skill" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Information" Type="text" />
           <Property Name="SkillLevel" Type="varchar" MaxLength="50" />
-          <Property Name="CreateDate" Type="datetime" Nullable="false" />
-          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="CreateDate" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="UpdateDate" Type="datetime2" Precision="7" />
           <Property Name="Status" Type="smallint" Nullable="false" />
           <Property Name="SkillLevelNumbered" Type="tinyint" />
         </EntityType>
@@ -275,8 +275,8 @@
           <Property Name="Skill1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Information" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="SkillLevel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="7" />
           <Property Name="Status" Type="Int16" Nullable="false" />
           <Property Name="SkillLevelNumbered" Type="Byte" />
         </EntityType>

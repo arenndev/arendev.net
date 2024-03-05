@@ -40,6 +40,29 @@ namespace arendev.net.Controllers.Admin
             repo.TDelete(t);
             return RedirectToAction("AdminSkill");
         }
+
+       
+
+        [HttpGet]
+        public ActionResult UpdateSkill(int id)
+        {
+            Skill t = repo.Find(x => x.Id == id);
+           return View(t);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateSkill(Skill p)
+        {
+            Skill t = repo.Find(x => x.Id == p.Id);
+            t.Information = p.Information;
+            t.Skill1 = p.Skill1;
+            t.SkillLevel = p.SkillLevel;
+            t.SkillLevelNumbered = p.SkillLevelNumbered;
+            t.Status = p.Status;
+            t.UpdateDate = DateTime.Now;
+            repo.TUpdate(t);
+            return RedirectToAction("AdminSkill");
+        }
     }    
        
 }

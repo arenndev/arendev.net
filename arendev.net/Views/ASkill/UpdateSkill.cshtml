@@ -1,0 +1,47 @@
+﻿@model arendev.net.Models.Entity.Skill
+@{
+    ViewBag.Title = "UpdateSkill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Skill Update</h1>
+                </div>
+            </div>
+        </div>
+
+        <form method="post">
+
+            @Html.Label("Skill")
+            @Html.TextBoxFor(x => x.Skill1, new { @class = "form-control" })
+            <br />
+            @Html.Label("SkillLevel")
+            @Html.TextBoxFor(x => x.SkillLevel, new { @class = "form-control" })
+            <br />
+            @Html.Label("SkillLevelNumbered")
+            @Html.TextBoxFor(x => x.SkillLevelNumbered, new { @class = "form-control" })
+            <br />
+            @Html.Label("Status")
+            @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+            <br />
+            @Html.Label("Information")
+            @Html.TextBoxFor(x => x.Information, new { @class = "form-control" })
+            <br />
+
+
+            <button class="btn btn-info" name="save">Update Changes</button>
+        </form>
+
+    </div>
+    <!-- /.content-header -->
+
+
+
+</div>

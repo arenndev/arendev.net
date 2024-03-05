@@ -2694,6 +2694,7 @@
     <Content Include="Views\AExperience\UpdateExperience.cshtml" />
     <Content Include="Views\ASkill\AdminSkill.cshtml" />
     <Content Include="Views\ASkill\AddSkill.cshtml" />
+    <Content Include="Views\ASkill\UpdateSkill.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

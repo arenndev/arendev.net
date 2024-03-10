@@ -6,7 +6,7 @@ using arendev.net.Models.Entity;
 
 namespace arendev.net.Repositories
 {
-    public class ReferenceRepository
+    public class ReferenceRepository : GenericRepository<Reference>
     {
     }
 }

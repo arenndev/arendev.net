@@ -1,0 +1,58 @@
+﻿@using arendev.net.Models.Entity;
+@model List<Reference>
+@{
+    ViewBag.Title = "AReference";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Reference</h1>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-bordered">
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Jobtitle</td>
+                <td>Organization</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <td>Status</td>
+                
+                
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Surname</td>
+                    <td>@item.JobTitle</td>
+                    <td>@item.Organization</td>
+                    <td>@item.Email</td>
+                    <td>@item.Phone</td>
+                    <td>@item.Status</td>
+                    
+                    
+                    <td><a href="/AReference/RemoveReference/@item.Id" class="btn btn-danger">Delete</a></td>
+                    <td><a href="/AReference/UpdateReference/@item.Id" class="btn btn-warning">Update</a></td>
+
+                </tr>
+            }
+        </table>
+
+        <a href="/AReference/AddReference" class="btn btn-primary">Add Reference</a>
+
+
+    </div>
+    <!-- /.content-header -->
+
+</div>
+

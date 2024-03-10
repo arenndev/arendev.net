@@ -1,0 +1,50 @@
+﻿@model arendev.net.Models.Entity.Reference
+
+@{
+    ViewBag.Title = "UpdateReference";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Reference Update</h1>
+                </div>
+            </div>
+        </div>
+
+        <form method="post">
+
+            @Html.Label("Name")
+            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+            <br />
+            @Html.Label("Surname")
+            @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+            <br />
+            @Html.Label("JobTitle")
+            @Html.TextBoxFor(x => x.JobTitle, new { @class = "form-control" })
+            <br />
+            @Html.Label("Organization")
+            @Html.TextBoxFor(x => x.Organization, new { @class = "form-control" })
+            <br />
+            @Html.Label("Email")
+            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+            <br />
+            @Html.Label("Phone")
+            @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+            <br />
+            @Html.Label("Status")
+            @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+            <br />
+            <button class="btn btn-info" name="save">Update Changes</button>
+        </form>
+
+    </div>
+    <!-- /.content-header -->
+
+
+
+</div>

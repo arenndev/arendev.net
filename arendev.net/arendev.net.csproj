@@ -131,6 +131,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\Admin\AEducationController.cs" />
     <Compile Include="Controllers\Admin\AExperienceController.cs" />
+    <Compile Include="Controllers\Admin\AReferenceController.cs" />
     <Compile Include="Controllers\Admin\ASkillController.cs" />
     <Compile Include="Controllers\CertificateController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -2699,6 +2700,9 @@
     <Content Include="Views\AEducation\AdminEducation.cshtml" />
     <Content Include="Views\AEducation\AddEducation.cshtml" />
     <Content Include="Views\AEducation\UpdateEducation.cshtml" />
+    <Content Include="Views\AReference\AdminReference.cshtml" />
+    <Content Include="Views\AReference\AddReference.cshtml" />
+    <Content Include="Views\AReference\UpdateReference.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
